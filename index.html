@@ -12,23 +12,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>La voz del Eterno</title>
 </head>
 
 <body>
     <nav>
-        <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Radio La voz del eterno</a>
+        <div class="nav-wrapper blue darken-4">
+            <a href="#" class="brand-logo ">La Voz del Eterno</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="sass.html">Inicio</a></li>
-                <li><a href="badges.html">Conocenos</a></li>
-                <li><a href="collapsible.html">Contactanos</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html">Sobre Nosotros</a></li>
+                <li><a href="index.html">Contactanos</a></li>
             </ul>
         </div>
     </nav>
-    <p class="flow-text">Hola Mundo</p>
-    <a class="btn-floating pulse"><i class="material-icons">menu</i></a>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/800/400/food/1"></a>
+        <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/400/food/2"></a>
+        <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/400/food/3"></a>
+        <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/400/food/4"></a>
+    </div>
+
+    <div class="container">
+        <div class="row">
+                <h4 class="center-align">Nuestro Repertorio</h4>
+                <hr>
+                <div class="col s5">Hola</div>
+                <div class="col s7">Resumen</div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.carousel');
+            var instances = M.Carousel.init(elems);
+        });        
+    </script>
+
 </body>
 
 </html>
